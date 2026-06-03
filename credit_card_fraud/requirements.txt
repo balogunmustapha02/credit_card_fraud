@@ -1,0 +1,10 @@
+pandas
+numpy
+tensorflow
+xgboost
+joblib
+streamlit
+matplotlib
+seaborn
+dill
+scikit-learn==1.6.1
