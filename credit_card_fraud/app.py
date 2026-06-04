@@ -6,6 +6,12 @@ import xgboost as xgb_lib
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
+import os
+
+# Get the directory where app.py lives
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODELS_DIR = os.path.join(BASE_DIR, "saved_models")
+
 # ── Page config ───────────────────────────────────────────────
 st.set_page_config(
     page_title="Fraud Detector",
@@ -16,13 +22,13 @@ st.set_page_config(
 # ── Load all models ───────────────────────────────────────────
 @st.cache_resource
 def load_models():
-    lr  = joblib.load("saved_models/lr_model.pkl")
-    rf  = joblib.load("saved_models/rf_model.pkl")
+    lr  = joblib.load(os.path.join(MODELS_DIR, "lr_model.pkl"))
+    rf  = joblib.load(os.path.join(MODELS_DIR, "rf_model.pkl"))
     xgb = xgb_lib.XGBClassifier()
-    xgb.load_model("saved_models/xgb_model.json")
-    nn  = tf.keras.models.load_model("saved_models/nn_model.keras")
-    scaler_amount = joblib.load("saved_models/scaler_amount.pkl")
-    scaler_time   = joblib.load("saved_models/scaler_time.pkl")
+    xgb.load_model(os.path.join(MODELS_DIR, "xgb_model.json"))
+    nn  = tf.keras.models.load_model(os.path.join(MODELS_DIR, "nn_model.keras"))
+    scaler_amount = joblib.load(os.path.join(MODELS_DIR, "scaler_amount.pkl"))
+    scaler_time   = joblib.load(os.path.join(MODELS_DIR, "scaler_time.pkl"))
     return lr, rf, xgb, nn, scaler_amount, scaler_time
 
 lr_model, rf_model, xgb_model, nn_model, scaler_amount, scaler_time = load_models()
