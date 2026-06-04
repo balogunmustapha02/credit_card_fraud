@@ -77,8 +77,8 @@ credit-card-fraud-detector/
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/credit-card-fraud-detector.git
-cd credit-card-fraud-detector
+git clone https://github.com/balogunmustapha02/credit_card_fraud.git
+cd credit-card-fraud
 ```
 
 **2. Create and activate a virtual environment**
@@ -160,16 +160,16 @@ To deploy your own instance:
 ## Dependencies
 
 ```
-streamlit
-scikit-learn
-pandas
-numpy
-joblib
-xgboost
-tensorflow
-matplotlib
-seaborn
-dill
+pandas==3.0.3
+numpy==2.4.6
+tensorflow==2.21.0
+xgboost==3.2.0
+joblib==1.5.3
+streamlit==1.58.0
+matplotlib==3.10.9
+seaborn==0.13.2
+dill==0.4.1
+scikit-learn==1.9.0
 ```
 
 ---
