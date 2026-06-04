@@ -142,7 +142,6 @@ The model was trained on the [Kaggle Credit Card Fraud Detection dataset](https:
 | XGBoost | — | — | — | — |
 | Neural Network | — | — | — | — |
 
-> Fill in your actual metrics from training.
 
 ---
 
@@ -177,5 +176,5 @@ dill
 
 ## Author
 
-**Mustafa** — Industrial/Production Engineering Student  
+**Group 22 C6** — Techcrush C6 AI/ML Track - Class A
 [GitHub](https://github.com/YOUR_USERNAME)
