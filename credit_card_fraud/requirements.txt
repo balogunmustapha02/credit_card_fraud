@@ -1,6 +1,6 @@
 pandas
 numpy
-tensorflow
+tensorflow==2.15.1
 xgboost
 joblib
 streamlit
