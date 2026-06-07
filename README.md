@@ -135,12 +135,15 @@ The model was trained on the [Kaggle Credit Card Fraud Detection dataset](https:
 
 ## Results
 
-                             Accuracy  Precision  Recall      F1  ROC-AUC
-Model                                                                    
-Random Forest (Tuned)          0.9995     0.8824  0.7895  0.8333   0.9436
-XGBoost (Tuned)                0.9995     0.9714  0.7158  0.8242   0.9752
-Neural Network                 0.9993     0.7912  0.7579  0.7742   0.9323
-Logistic Regression (Tuned)    0.9989     0.6466  0.7895  0.7109   0.9619
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|---|---|---|---|---|---|
+| Random Forest (Tuned) | 0.9995 | 0.8824 | 0.7895 | 0.8333 | 0.9436 |
+| XGBoost (Tuned) | 0.9995 | 0.9714 | 0.7158 | 0.8242 | 0.9752 |
+| Neural Network | 0.9993 | 0.7912 | 0.7579 | 0.7742 | 0.9323 |
+| Logistic Regression (Tuned) | 0.9989 | 0.6466 | 0.7895 | 0.7109 | 0.9619 |
+
+> **Best overall:** XGBoost — highest ROC-AUC (0.9752) and Precision (0.9714)
+> **Best Recall:** Random Forest & Logistic Regression — catches the most actual fraud cases
 
 ---
 
